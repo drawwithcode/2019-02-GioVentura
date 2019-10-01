@@ -1,11 +1,22 @@
-function preload(){
-  // put preload code here
-}
+var colorList = ['#BECAE6',
+                 '#209EBB',
+                 '#023047',
+                 '#FFB701',
+                 '#FC8500']
 
 function setup() {
-  // put setup code here
+  createCanvas(windowWidth,windowHeight);
+  angleMode(DEGREES);
+
 }
 
 function draw() {
-  // put drawing code here
+  for (var x = 0; x < windowWidth+10; x += 10) {
+  for (var y = 0; y < windowHeight+10; y += 10) {
+
+  fill(random(colorList));
+  ellipse(x,y,15);}
+  }
+
+
 }
